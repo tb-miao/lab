@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/_preview.ico">
+    <link rel="stylesheet" href="./assets/ass-css/ass-auth.css">
+    <title>登录页面</title>
+</head>
+<body>
+    <div class="web_notice">
+    <div class="web_notice_content">
+        <h2 class="web_notice_title">🎉 重要通知！</h2>
+        <p class="web_notice_text">
+            网站已完成全新升级，欢迎体验！awa
+            <!-- &nbsp;&nbsp;&nbsp;&nbsp;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;-->
+        </p>
+        <div class="web_notice_buttons">
+            <!--<a href="https://afdian.net/order/create?plan_id=" class="web_notice_button support_button">
+                支持一下
+            </a>-->
+            <a class="web_notice_button acknowledge_button" onclick="closeWebNotice()">
+                我知道了
+            </a>
+        </div>
+    </div>
+</div>
+    <audio id="background-music" loop autoplay muted>
+        <source src="./assets/file/31319262943.mp3" type="audio/mpeg">
+        您的浏览器不支持 audio 元素。
+    </audio>
+    <div class="login-container">
+        <div class="image-container">
+            <img src="./assets/images/BlueArchive_ba.png" alt="图片awa"> 
+        </div>
+        <h2>登录</h2>
+        <input type="text" id="username" placeholder="用户名" onkeypress="handleKeyPress(event)">
+        <input type="password" id="password" placeholder="密码" onkeypress="handleKeyPress(event)">
+        <button onclick="login()">登录</button>
+        <p id="message"></p>
+        <div class="nav01_fooder">版权所有:TBNYA(TB-MIAO) &nbsp;&nbsp;|&nbsp;&nbsp;
+	© 2024-现在  All Copyright Reserved |&nbsp;&nbsp; 网站已正常运行：<span id="sitetime"  style="color: #00e8f0;" ></span></div>
+    </div>
+    <script src="./assets/ass-js/ass-auth.js"></script>
+</body>
+</html>
